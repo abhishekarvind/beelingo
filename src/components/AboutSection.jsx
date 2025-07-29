@@ -22,7 +22,7 @@ const AboutSection = () => {
         <ScrollAnimation animation="fadeInLeft" delay={0.2}>
           <div className="text-center lg:text-left">
             <p className="text-gray-800 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed font-light transition-colors duration-300 hover:text-gray-700">
-              Hi there! 🐝 I'm <span className="font-semibold text-[#333] hover:text-[#E59412] transition-colors">Keerthana Bukya</span>, a <span className="font-semibold hover:text-[#E59412] transition-colors">TEFL-certified English educator</span> and Founder of <span className="font-semibold text-[#333] hover:text-[#E59412] transition-colors">BeeLingo</span>—a creative learning space for children aged 2–10. At BeeLingo, we build strong language foundations through joyful, play-based lessons focused on communication, vocabulary, and phonics.
+              Hi there! 🐝 I'm <span className="font-semibold text-[#333] hover:text-[#E59412] transition-colors">Keerthana Bukya</span>, a <span className="font-semibold hover:text-[#E59412] transition-colors">TEFL-certified English educator</span> and Founder of <span className="font-semibold text-[#333] hover:text-[#E59412] transition-colors">BeeLingo</span> a creative learning space for children aged 2–10. At BeeLingo, we build strong language foundations through joyful, play-based lessons focused on communication, vocabulary, and phonics.
             </p>
           </div>
         </ScrollAnimation>

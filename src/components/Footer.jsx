@@ -11,9 +11,8 @@ const Footer = () => {
             <div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 md:mb-6 text-[#F3B415]">Beelingo</h3>
               <p className="text-gray-300 mb-4 sm:mb-6 md:mb-8 leading-relaxed text-sm sm:text-base md:text-lg">
-                Empowering language learning through innovative technology and engaging content. 
-                Join us on your journey to mastering new languages with our cutting-edge approach.
-              </p>
+              Shaping tiny voices into
+              buzzing storytellers of tomorrow </p>
               <div className="flex space-x-3 sm:space-x-4 md:space-x-6">
                 {/* Instagram */}
                 <a href="https://www.instagram.com/beelingo.lt?igsh=MWgzZWRsdjhvand3dg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#F3B415] transition-all duration-300 hover:scale-110 transform p-2">

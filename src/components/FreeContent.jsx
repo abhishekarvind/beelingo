@@ -21,11 +21,14 @@ const FreeContent = () => {
         </ScrollAnimation>
         
         <ScrollAnimation animation="scaleIn" delay={0.4}>
-          <button 
-            className="bg-[#F3B415] text-[#1E1E1E] font-light py-2 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-full text-sm sm:text-base md:text-lg hover:bg-gray-100 transition-colors duration-300 mt-4 sm:mt-6 md:mt-8"
+          <a 
+            href="https://form.typeform.com/to/a5XxAEAN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#F3B415] text-[#1E1E1E] font-light py-2 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-full text-sm sm:text-base md:text-lg hover:bg-gray-100 transition-colors duration-300 mt-4 sm:mt-6 md:mt-8 inline-block"
           >
             Book now
-          </button>
+          </a>
         </ScrollAnimation>
         
         <ScrollAnimation animation="fadeInUp" delay={0.6}>
