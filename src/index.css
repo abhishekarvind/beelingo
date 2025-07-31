@@ -5,11 +5,85 @@
   html {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
   
   body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    overscroll-behavior: none;
+  }
+
+  /* Fix for mobile scrolling issues */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Ensure proper scrolling on mobile */
+  #root {
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Fix for iOS Safari */
+  @supports (-webkit-touch-callout: none) {
+    html, body {
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  /* Additional mobile scroll fixes */
+  section {
+    touch-action: pan-y;
+  }
+
+  /* Prevent horizontal scrolling on mobile */
+  .overflow-hidden {
+    overflow-x: hidden !important;
+  }
+
+  /* Fix for touch scrolling on mobile */
+  @media (max-width: 768px) {
+    html, body {
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Prevent zoom on input focus */
+    input, textarea, select {
+      font-size: 16px !important;
+    }
+  }
+
+  /* Fix for Android Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    html, body {
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  /* Smooth scroll utility */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Mobile-specific optimizations */
+  @media (max-width: 640px) {
+    /* Reduce animation complexity on mobile */
+    .animate-pulse {
+      animation-duration: 3s;
+    }
+    
+    /* Optimize touch targets */
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
   }
 }
 

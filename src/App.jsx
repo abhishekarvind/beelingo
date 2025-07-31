@@ -12,7 +12,7 @@ import ImageSwiper from './components/ImageSwiper'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col overflow-x-hidden">
+    <div className="min-h-screen flex flex-col overflow-x-hidden touch-pan-y">
       <Nav />
       <Hero/>
       <AboutSection/>

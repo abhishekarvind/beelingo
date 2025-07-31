@@ -45,13 +45,14 @@ const ScrollAnimation = ({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: threshold }}
+      viewport={{ once: true, amount: threshold, margin: "0px 0px -100px 0px" }}
       transition={{
         duration: duration,
         delay: delay,
         ease: [0.25, 0.46, 0.45, 0.94]
       }}
       variants={animations[animation]}
+      style={{ willChange: 'transform, opacity' }}
     >
       {children}
     </motion.div>
