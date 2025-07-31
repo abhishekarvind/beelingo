@@ -3,7 +3,7 @@ import ScrollAnimation from './ScrollAnimation';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-orange-50 flex items-center relative overflow-hidden touch-pan-y">
+    <section className="h-screen bg-gradient-to-br from-yellow-50 via-white to-orange-50 flex items-center justify-center relative overflow-hidden touch-pan-y">
       {/* Gradient Design Elements - optimized for mobile */}
       <div className="absolute top-0 left-0 w-32 sm:w-48 md:w-64 lg:w-80 xl:w-96 h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-full opacity-30 sm:opacity-40 blur-2xl sm:blur-3xl animate-pulse pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-28 sm:w-40 md:w-56 lg:w-64 xl:w-80 h-28 sm:h-40 md:h-56 lg:h-64 xl:h-80 bg-gradient-to-tr from-orange-300 to-yellow-300 rounded-full opacity-25 sm:opacity-35 blur-2xl sm:blur-3xl animate-pulse pointer-events-none"></div>
@@ -12,8 +12,8 @@ const Hero = () => {
       <div className="absolute bottom-1/3 left-1/4 w-20 sm:w-28 md:w-40 lg:w-48 xl:w-56 h-20 sm:h-28 md:h-40 lg:h-48 xl:h-56 bg-gradient-to-tl from-yellow-300 to-orange-300 rounded-full opacity-25 sm:opacity-35 blur-xl sm:blur-2xl animate-pulse pointer-events-none"></div>
       <div className="absolute top-2/3 right-1/3 w-16 sm:w-24 md:w-32 lg:w-40 xl:w-48 h-16 sm:h-24 md:h-32 lg:h-40 xl:h-48 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-full opacity-40 sm:opacity-50 blur-xl sm:blur-2xl animate-pulse pointer-events-none"></div>
 
-      <div className="max-w-9xl mx-auto px-3 sm:px-6 md:px-8 lg:px-10 relative z-10">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-40">
+      <div className="max-w-9xl mx-auto px-3 sm:px-6 md:px-8 lg:px-10 relative z-10 w-full">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between gap-6 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-40">
           
           {/* Text Content */}
           <ScrollAnimation animation="fadeInLeft" delay={0.2}>

@@ -85,5 +85,37 @@
       min-width: 44px;
     }
   }
+
+  /* Fix for mobile viewport height issues */
+  @media (max-width: 768px) {
+    .h-screen {
+      height: 100vh;
+      height: 100dvh; /* Dynamic viewport height for mobile */
+      height: calc(var(--vh, 1vh) * 100); /* Custom viewport height */
+    }
+    
+    /* Ensure proper scrolling */
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+    }
+    
+    #root {
+      height: 100%;
+      overflow-x: hidden;
+    }
+  }
+
+  /* Dynamic viewport height support */
+  @supports (height: 100dvh) {
+    .h-screen {
+      height: 100dvh;
+    }
+  }
+
+  /* Custom viewport height fallback */
+  .h-screen {
+    height: calc(var(--vh, 1vh) * 100);
+  }
 }
 
