@@ -12,9 +12,9 @@ import ImageSwiper from './components/ImageSwiper'
 
 function App() {
   return (
-    <div className="w-full min-h-screen flex flex-col overflow-x-hidden touch-pan-y">
+    <div className="w-full min-h-screen flex flex-col">
       <Nav />
-      <main className="flex-1">
+      
         <Hero/>
         <AboutSection/>
         <FeatureSection/>
@@ -23,7 +23,6 @@ function App() {
         <FreeContent/>
         <Testimonials/>
         <ImageSwiper/>
-      </main>
       <Footer/>
     </div>
   )
